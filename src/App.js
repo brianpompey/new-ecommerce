@@ -1,7 +1,10 @@
 import { Switch, Route } from 'react-router-dom';
 import './default.scss';
+
+//pages
 import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
+import Login from './pages/Login';
 
 //layouts
 import MainLayout from './layouts/MainLayout';
@@ -19,6 +22,11 @@ function App() {
           <Route path="/registration" render={() => (
             <MainLayout>
               <Registration />
+            </MainLayout>
+          )} />
+          <Route path="/login" render={() => (
+            <MainLayout>
+              <Login />
             </MainLayout>
           )} />
       </Switch>
