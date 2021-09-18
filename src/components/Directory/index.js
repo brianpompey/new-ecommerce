@@ -1,6 +1,7 @@
 import React from 'react';
 import Recipe from './../../assets/recipes.jpg'
 import Grill from './../../assets/grills.jpg'
+import "./styles.scss";
 
 const Directory = props => {
     return(
@@ -17,6 +18,7 @@ const Directory = props => {
                     </a>
                 </div>
                 <div
+                    className="item"
                     style={{
                         backgroundImage: `url(${Grill})`
                     }}
