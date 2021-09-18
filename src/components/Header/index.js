@@ -12,6 +12,9 @@ const Header = props => {
                         <img src={Logo} alt="BBQ LOGO" />
                     </Link>
                 </div>
+                <div className="headerText">
+                    SmokeShow
+                </div>
 
                 <div className="callToActions">
                     <ul>
