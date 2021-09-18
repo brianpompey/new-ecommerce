@@ -1,5 +1,5 @@
 import React from 'react';
-import './default.scss';
+import './styles.scss';
 
 const Header = props => {
     return (
