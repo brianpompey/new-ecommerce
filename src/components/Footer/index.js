@@ -1,9 +1,12 @@
 import React from 'react';
+import './styles.scss'
 
 const Footer = props => {
     return (
-        <footer>
-
+        <footer className="footer">
+            <div className="wrap">
+                © WelcometotheBBQ 2021
+            </div>
         </footer>
     );
 };
