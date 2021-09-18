@@ -15,7 +15,11 @@ function App() {
               <Homepage />
             </MainLayout>
           )} />
-          <Route path="/registration" component={Registration} />
+          <Route path="/registration" render={() => (
+            <MainLayout>
+              <Registration />
+            </MainLayout>
+          )} />
       </Switch>
     </div>
   );
