@@ -11,12 +11,20 @@ const Directory = props => {
                     style={{
                         backgroundImage: `url(${Recipe})`
                     }}
-                ></div>
+                >
+                    <a>
+                        Recipes
+                    </a>
+                </div>
                 <div
                     style={{
                         backgroundImage: `url(${Grill})`
                     }}
-                ></div>
+                >
+                    <a>
+                        Grills
+                    </a>
+                </div>
             </div>
         </div>
     );
