@@ -5,15 +5,16 @@ import Registration from './pages/Registration';
 
 //layouts
 import MainLayout from './layouts/MainLayout';
+import HomepageLayout from './layouts/HomepageLayout';
 
 function App() {
   return (
     <div className="App">
       <Switch>
           <Route exact path="/" render={() => (
-            <MainLayout>
+            <HomepageLayout>
               <Homepage />
-            </MainLayout>
+            </HomepageLayout>
           )} />
           <Route path="/registration" render={() => (
             <MainLayout>
