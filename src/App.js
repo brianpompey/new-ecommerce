@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import './default.scss';
 import { auth } from './firebase/utils';
 
@@ -29,7 +29,11 @@ class App extends Component {
 
   componentDidMount() {
     this.authListener = auth.onAuthStateChanged(userAuth => {
-      if (!userAuth) return;
+      if (!userAuth) {
+        this.setState({
+          ...initialState
+        });
+      };
 
       this.setState({
         currentUser: userAuth
@@ -56,11 +60,13 @@ class App extends Component {
                 <Registration />
               </MainLayout>
             )} />
-            <Route path="/login" render={() => (
-              <MainLayout currentUser={currentUser}>
-                <Login />
-              </MainLayout>
-            )} />
+            <Route path="/login" 
+              render={() => currentUser ? <Redirect to="/" /> : (
+                <MainLayout currentUser={currentUser}>
+                  <Login />
+                </MainLayout>
+              )} 
+            />
         </Switch>
       </div>
     );
