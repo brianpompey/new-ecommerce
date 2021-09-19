@@ -1,10 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
+//import { connect } from 'react-redux';
 import './styles.scss';
 import { Link } from 'react-router-dom';
 import Logo from './../../assets/newbbqlogo.jpg'
 
 const Header = props => {
+    const { currentUser } = props;
     return (
         <header className="header">
             <div className="wrap">
@@ -41,8 +42,9 @@ Header.defaultProps = {
     currentUser: null
 };
 
+/*
 const mapStateToProps = ({ user }) => ({
     currentUser: user.currentUser
 });
-
-export default connect(mapStateToProps, null)(Header);
+*/
+export default Header;
