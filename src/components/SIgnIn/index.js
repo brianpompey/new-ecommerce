@@ -21,7 +21,7 @@ class SignIn extends Component {
                         <form onSubmit={this.handleSubmit}>
                             <div className="socialSignin">
                                 <div className="row">
-                                    <Button onClick={signInWithGoogle}>
+                                    <Button /*onClick={signInWithGoogle}*/>
                                         Sign in with Google
                                     </Button>
                                 </div>

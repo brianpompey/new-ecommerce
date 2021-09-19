@@ -1,14 +1,10 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import { initializeApp } from 'firebase/app';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { getFirestore } from "firebase/firestore";
 import { firebaseConfig } from './config';
 
-firebase.initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
 
-export const auth = firebase.auth();
-export const firestore = firebase.firestore();
+export const auth = getAuth(firebaseApp);
 
-export const GoogleProvider = new firebase.auth.GoogleAuthProvider();
-GoogleProvider.setCustomParameters({ prompt: 'select_account' });
-
-export const signInWithGoogle = () => auth.signInWithGoogle(GoogleProvider);
+const db = getFirestore();
