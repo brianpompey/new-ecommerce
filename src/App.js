@@ -42,21 +42,22 @@ class App extends Component {
   }
 
   render() {
+    const { currentUser } = this.state;
     return (
       <div className="App">
         <Switch>
             <Route exact path="/" render={() => (
-              <HomepageLayout>
+              <HomepageLayout currentUser={currentUser}>
                 <Homepage />
               </HomepageLayout>
             )} />
             <Route path="/registration" render={() => (
-              <MainLayout>
+              <MainLayout currentUser={currentUser}>
                 <Registration />
               </MainLayout>
             )} />
             <Route path="/login" render={() => (
-              <MainLayout>
+              <MainLayout currentUser={currentUser}>
                 <Login />
               </MainLayout>
             )} />
