@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './styles.scss';
+
+import { auth, handleUserProfile } from './../../firebase/utils';
 import FormInput from '../forms/FormInput';
 import Button from '../forms/Button';
 
