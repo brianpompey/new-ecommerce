@@ -40,11 +40,11 @@ class App extends Component {
       });
     });
   }
-
+/*
   componentWillUnmount() {
     this.authListener();
   }
-
+*/
   render() {
     const { currentUser } = this.state;
     return (
