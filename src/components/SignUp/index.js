@@ -47,6 +47,10 @@ class SignUp extends Component {
             const { user } = await auth.createUserWithEmailAndPassword(email, password);
 
             await handleUserProfile(user, { displayName });
+
+            this.setState({
+                ...initialState
+            });
         } catch(err) {
             // console.log(Err)
         }
