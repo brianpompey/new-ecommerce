@@ -20,7 +20,7 @@ class SignUp extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange() {
+    handleChange(e) {
         const { name, value } = e.target;
 
         this.setState({
