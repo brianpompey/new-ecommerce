@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './default.scss';
-import { auth } from './firebase/utils';
+import { auth, handleUserProfile } from './firebase/utils';
 
 //pages
 import Homepage from './pages/Homepage';
@@ -28,16 +28,18 @@ class App extends Component {
   authListener = null;
 
   componentDidMount() {
-    this.authListener = auth.onAuthStateChanged(userAuth => {
-      if (!userAuth) {
-        this.setState({
-          ...initialState
-        });
-      };
-
-      this.setState({
-        currentUser: userAuth
-      });
+    this.authListener = auth.onAuthStateChanged(async userAuth => {
+      if (userAuth) {
+        const userRef = await handleUserProfile(userAuth);
+        userRef.onSnapshot(snapshot => {
+          this.setState({
+            currentUser: {
+              id: snapshot.is,
+              ...snapshot.data()
+            }
+          })
+        })
+      }
     });
   }
 /*
