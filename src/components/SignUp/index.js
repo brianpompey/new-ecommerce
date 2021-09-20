@@ -38,45 +38,47 @@ class SignUp extends Component {
                         Signup
                     </h2>
 
-                    <form>
-                        <FormInput 
-                            type="text"
-                            name="displayName"
-                            value={displayName}
-                            placeholder="Full Name"
-                            onChange={this.handleChange}
-                        />
+                    <div className="formWrap">
+                        <form>
+                            <FormInput 
+                                type="text"
+                                name="displayName"
+                                value={displayName}
+                                placeholder="Full Name"
+                                onChange={this.handleChange}
+                            />
 
-                        <FormInput 
-                            type="email"
-                            name="email"
-                            value={email}
-                            placeholder="Email Address"
-                            onChange={this.handleChange}
-                        />
+                            <FormInput 
+                                type="email"
+                                name="email"
+                                value={email}
+                                placeholder="Email Address"
+                                onChange={this.handleChange}
+                            />
 
-                        <FormInput 
-                            type="password"
-                            name="password"
-                            value={password}
-                            placeholder="Password"
-                            onChange={this.handleChange}
-                        />
+                            <FormInput 
+                                type="password"
+                                name="password"
+                                value={password}
+                                placeholder="Password"
+                                onChange={this.handleChange}
+                            />
 
-                        <FormInput 
-                            type="password"
-                            name="confirmPassword"
-                            value={confirmPassword}
-                            placeholder="Confirm Password"
-                            onChange={this.handleChange}
-                        />
+                            <FormInput 
+                                type="password"
+                                name="confirmPassword"
+                                value={confirmPassword}
+                                placeholder="Confirm Password"
+                                onChange={this.handleChange}
+                            />
 
-                        <Button type="submit">
-                            Register
-                        </Button>
+                            <Button type="submit">
+                                Register
+                            </Button>
 
-                        
-                    </form>
+                            
+                        </form>
+                    </div>
                 </div>
             </div>
         )
