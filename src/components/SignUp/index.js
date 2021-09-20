@@ -16,6 +16,16 @@ class SignUp extends Component {
         this.state = {
             ...initialState
         };
+
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange() {
+        const { name, value } = e.target;
+
+        this.setState({
+            [name]: value
+        });
     }
 
     render() {
@@ -34,6 +44,7 @@ class SignUp extends Component {
                             name="displayName"
                             value={displayName}
                             placeholder="Full Name"
+                            onChange={this.handleChange}
                         />
                     </form>
                 </div>
