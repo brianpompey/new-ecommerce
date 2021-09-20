@@ -40,8 +40,15 @@ class SignUp extends Component {
             this.setState({
                 errors: err
             });
+            return;
+        }
 
-            return
+        try {
+            const { user } = await auth.createUserWithEmailAndPassword(email, password);
+
+            await handleUserProfile(user, { displayName });
+        } catch(err) {
+            // console.log(Err)
         }
     }
 
