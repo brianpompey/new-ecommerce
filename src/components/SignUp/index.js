@@ -71,6 +71,10 @@ class SignUp extends Component {
                             onChange={this.handleChange}
                         />
 
+                        <Button type="submit">
+                            Register
+                        </Button>
+
                         
                     </form>
                 </div>
