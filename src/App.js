@@ -9,8 +9,8 @@ import { setCurrentUser } from './redux/User/user.actions';
 import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
-import SmokerDirectory from './pages/SmokerDirectory'
-import RecipeDirectory from './pages/RecipeDirectory'
+import SmokerDirectory from './pages/SmokerDirectory';
+import RecipeDirectory from './pages/RecipeDirectory';
 
 //layouts
 import MainLayout from './layouts/MainLayout';
@@ -63,6 +63,18 @@ class App extends Component {
               render={() => currentUser ? <Redirect to="/" /> : (
                 <MainLayout >
                   <Login />
+                </MainLayout>
+              )} 
+            />
+            <Route path="/grills" render={() => (
+                <MainLayout >
+                  <h2>Grills</h2>
+                </MainLayout>
+              )} 
+            />
+            <Route path="/recipes" render={() => (
+                <MainLayout >
+                  <h2>Recipes</h2>
                 </MainLayout>
               )} 
             />
