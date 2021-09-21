@@ -68,13 +68,13 @@ class App extends Component {
             />
             <Route path="/grills" render={() => (
                 <MainLayout >
-                  <h2>Grills</h2>
+                  <SmokerDirectory />
                 </MainLayout>
               )} 
             />
             <Route path="/recipes" render={() => (
                 <MainLayout >
-                  <h2>Recipes</h2>
+                  <RecipeDirectory />
                 </MainLayout>
               )} 
             />
