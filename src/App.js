@@ -18,7 +18,7 @@ import HomepageLayout from './layouts/HomepageLayout';
 class App extends Component {
 
   authListener = null;
-
+/*
   componentDidMount() {
     const { setCurrentUser } = this.props;
 
@@ -40,6 +40,7 @@ class App extends Component {
   componentWillUnmount() {
     this.authListener();
   }
+  */
 
   render() {
     const { currentUser } = this.props;
