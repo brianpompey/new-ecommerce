@@ -59,6 +59,10 @@ class SignIn extends Component {
                                 handleChange={this.handleChange}
                             />
 
+                            <Button type="submit">
+                                Login
+                            </Button>
+
                             <div className="socialSignin">
                                 <div className="row">
                                     <Button /*onClick={signInWithGoogle}*/>
