@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './default.scss';
 import { auth, handleUserProfile } from './firebase/utils';
+import { setCurrentUser } from './redux/User/user.actions';
 
 //pages
 import Homepage from './pages/Homepage';
@@ -75,4 +77,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+});
+
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: user => dispatch(setCurrentUser(user))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
