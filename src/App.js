@@ -20,6 +20,8 @@ class App extends Component {
   authListener = null;
 
   componentDidMount() {
+    const { setCurrentUser } = this.props;
+
     this.authListener = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await handleUserProfile(userAuth);
@@ -30,6 +32,8 @@ class App extends Component {
           })
         })
       }
+
+      setCurrentUser(userAuth);
     });
   }
 /*
