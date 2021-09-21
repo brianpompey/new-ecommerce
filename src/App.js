@@ -14,31 +14,19 @@ import Login from './pages/Login';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 
-const initialState = {
-  currentUser: null
-};
-
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ...initialState
-    };
-  }
 
   authListener = null;
-/*
+
   componentDidMount() {
     this.authListener = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await handleUserProfile(userAuth);
         userRef.onSnapshot(snapshot => {
-          this.setState({
-            currentUser: {
-              id: snapshot.is,
+          this.props.setCurrentUser({
+              id: snapshot.id,
               ...snapshot.data()
-            }
           })
         })
       }
@@ -50,7 +38,7 @@ class App extends Component {
   }
 */
   render() {
-    const { currentUser } = this.state;
+    const { currentUser } = this.props;
     return (
       <div className="App">
         <Switch>
