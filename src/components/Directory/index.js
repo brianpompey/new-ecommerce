@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Recipe from './../../assets/recipes.jpg';
 import Grill from './../../assets/grills.jpg';
 import "./styles.scss";
@@ -13,9 +14,9 @@ const Directory = props => {
               backgroundImage: `url(${Grill})`
             }}
           >
-            <a>
+            <Link to="/grills">
               Grills
-            </a>
+            </Link>
           </div>
           <div
             className="item"
@@ -23,9 +24,9 @@ const Directory = props => {
               backgroundImage: `url(${Recipe})`
             }}
           >
-            <a>
+            <Link to="/recipes">
               Recipes
-            </a>
+            </Link>
           </div>
         </div>
       </div>
