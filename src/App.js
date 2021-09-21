@@ -36,11 +36,11 @@ class App extends Component {
       setCurrentUser(userAuth);
     });
   }
-/*
+
   componentWillUnmount() {
     this.authListener();
   }
-*/
+
   render() {
     const { currentUser } = this.props;
     return (
