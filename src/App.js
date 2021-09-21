@@ -9,6 +9,8 @@ import { setCurrentUser } from './redux/User/user.actions';
 import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
+import SmokerDirectory from './pages/SmokerDirectory'
+import RecipeDirectory from './pages/RecipeDirectory'
 
 //layouts
 import MainLayout from './layouts/MainLayout';
