@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   authListener = null;
-
+/*
   componentDidMount() {
     this.authListener = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
