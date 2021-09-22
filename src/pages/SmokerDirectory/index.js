@@ -329,7 +329,7 @@ const SmokerDirectory = () => {
                 url="/smokers/pellet/1"
                 image={ pitboss } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="pit-boss-pb440"
               data-item-price="349.99"
               data-item-url="/smokers/pellet/1"
@@ -345,7 +345,7 @@ const SmokerDirectory = () => {
                 url="/smokers/pellet/2"
                 image={ green } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="green-mountain-crockett"
               data-item-price="299.99"
               data-item-url="/smokers/pellet/2"
@@ -364,7 +364,7 @@ const SmokerDirectory = () => {
                 url="/smokers/pellet/3"
                 image={ campcheap } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="campchef-smokepro-dlx"
               data-item-price="484.99"
               data-item-url="/smokers/pellet/3"
@@ -380,7 +380,7 @@ const SmokerDirectory = () => {
                 url="/smokers/pellet/4"
                 image={ zgrill } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="z-grills-700"
               data-item-price="569.99"
               data-item-url="/smokers/pellet/4"
@@ -399,7 +399,7 @@ const SmokerDirectory = () => {
                 url="/smokers/pellet/5"
                 image={ traeger } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="traeger-timberline-850"
               data-item-price="1800.99"
               data-item-url="/smokers/pellet/5"
@@ -415,7 +415,7 @@ const SmokerDirectory = () => {
                 url="/smokers/pellet/6"
                 image={ campchef } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="campchef-woodwind-36"
               data-item-price="1200.99"
               data-item-url="/smokers/pellet/6"
@@ -441,7 +441,7 @@ const SmokerDirectory = () => {
                 url="/smokers/kamado/1"
                 image={ acorn } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="acorn-chargriller"
               data-item-price="299.99"
               data-item-url="/smokers/kamado/1"
@@ -460,7 +460,7 @@ const SmokerDirectory = () => {
                 url="/smokers/kamado/2"
                 image={ biggreenegg } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="big-green-egg"
               data-item-price="899.99"
               data-item-url="/smokers/kamado/2"
@@ -479,7 +479,7 @@ const SmokerDirectory = () => {
                 url="/smokers/kamado/3"
                 image={ kamado } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="kamado-joe"
               data-item-price="1599.99"
               data-item-url="/smokers/kamado/3"
@@ -505,7 +505,7 @@ const SmokerDirectory = () => {
                 url="/smokers/drum/1"
                 image={ charvert } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="charbroil-bullet"
               data-item-price="177.99"
               data-item-url="/smokers/drum/1"
@@ -521,7 +521,7 @@ const SmokerDirectory = () => {
                 url="/smokers/drum/2"
                 image={ bronco } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="bronco-drum"
               data-item-price="249.99"
               data-item-url="/smokers/drum/2"
@@ -540,7 +540,7 @@ const SmokerDirectory = () => {
                 url="/smokers/drum/3"
                 image={ websmokey } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="weber-smokey-mountain"
               data-item-price="429.99"
               data-item-url="/smokers/drum/3"
@@ -556,7 +556,7 @@ const SmokerDirectory = () => {
                 url="/smokers/drum/4"
                 image={ pitbarrel} />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="pit-barrel-smoker"
               data-item-price="349.99"
               data-item-url="/smokers/drum/4"
@@ -575,7 +575,7 @@ const SmokerDirectory = () => {
                 url="/smokers/drum/5"
                 image={ gateway } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="gateway-drum"
               data-item-price="799.99"
               data-item-url="/smokers/drum/5"
@@ -602,7 +602,7 @@ const SmokerDirectory = () => {
                 url="/smokers/offset/1"
                 image={ charoff } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="chargriller-e1224"
               data-item-price="287.99"
               data-item-url="/smokers/offset/1"
@@ -618,7 +618,7 @@ const SmokerDirectory = () => {
                 url="/smokers/offset/2"
                 image={ highland } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="oklahoma-highland"
               data-item-price="299.99"
               data-item-url="/smokers/offset/2"
@@ -637,7 +637,7 @@ const SmokerDirectory = () => {
                 url="/smokers/offset/3"
                 image={ bandera } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="oklahoma-bandera"
               data-item-price="449.99"
               data-item-url="/smokers/offset/3"
@@ -656,7 +656,7 @@ const SmokerDirectory = () => {
                 url="/smokers/offset/4"
                 image={ wichita} />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="yoder-wichita"
               data-item-price="2399.99"
               data-item-url="/smokers/offset/4"
@@ -680,7 +680,7 @@ const SmokerDirectory = () => {
                 url="/smokers/gravity/1"
                 image={ mb560 } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="masterbuilt-560"
               data-item-price="499.99"
               data-item-url="/smokers/gravity/1"
@@ -696,7 +696,7 @@ const SmokerDirectory = () => {
                 url="/smokers/gravity/2"
                 image={ mb1050 } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="masterbuilt-1050"
               data-item-price="799.99"
               data-item-url="/smokers/gravity/2"
