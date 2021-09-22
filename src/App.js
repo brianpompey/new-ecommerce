@@ -16,6 +16,8 @@ import RecipeDirectory from './pages/RecipeDirectory';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 
+import { ChakraProvider } from "@chakra-ui/react";
+
 
 class App extends Component {
 
@@ -67,8 +69,10 @@ class App extends Component {
               )} 
             />
             <Route path="/grills" render={() => (
-                <MainLayout >
-                  <SmokerDirectory />
+                <MainLayout>
+                  <ChakraProvider >
+                    <SmokerDirectory />
+                  </ChakraProvider>
                 </MainLayout>
               )} 
             />
