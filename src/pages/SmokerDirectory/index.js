@@ -40,6 +40,10 @@ import './styles.css'
 
 const SmokerDirectory = () => {
     return(
+        <div>
+            <button className="snipcart-checkout">
+                View Cart
+            </button>
         <div className="smokers">
             <h2>Let's take a look at each smoker type and some examples that you can purchase today to begin your bbq journey!</h2>
             <div className="smokers-kettle">
@@ -705,6 +709,7 @@ const SmokerDirectory = () => {
         </div>
       </div>
     <hr />
+    </div>
     </div>
     );
 }
