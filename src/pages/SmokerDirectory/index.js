@@ -58,7 +58,7 @@ const SmokerDirectory = () => {
                     url="/smokers/kettle/kettle1"
                     image={ weber } />
                     <button
-                    class="snipcart-add-item"
+                    className="snipcart-add-item"
                     data-item-id="weber-kettle-original"
                     data-item-price="109.99"
                     data-item-url="/smokers/kettle/kettle1"
@@ -76,7 +76,7 @@ const SmokerDirectory = () => {
                     url="/smokers/kettle/kettlepre"
                     image={ weberpro } />
                     <button
-                    class="snipcart-add-item"
+                    className="snipcart-add-item"
                     data-item-id="weber-kettle-premium"
                     data-item-price="165.99"
                     data-item-url="/smokers/kettle/kettlepre"
@@ -94,7 +94,7 @@ const SmokerDirectory = () => {
                     url="/smokers/kettle/kettlepro"
                     image={ webersuper } />
                     <button
-                    class="snipcart-add-item"
+                    className="snipcart-add-item"
                     data-item-id="weber-kettle-performer"
                     data-item-price="439.99"
                     data-item-url="/smokers/kettle/kettlepro"
@@ -121,7 +121,7 @@ const SmokerDirectory = () => {
               url="/smokers/propane/1"
               image={ mbcheap } />
             <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="masterbuilt-budget"
               data-item-price="149.99"
               data-item-url="/smokers/propane/1"
@@ -137,7 +137,7 @@ const SmokerDirectory = () => {
               url="/smokers/propane/2"
               image={ char } />
             <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="charbroil-595"
               data-item-price="189.99"
               data-item-url="/smokers/propane/2"
@@ -156,7 +156,7 @@ const SmokerDirectory = () => {
               url="/smokers/propane/3"
               image={ campsmoke } />
             <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="campchef-smokevault"
               data-item-price="229.99"
               data-item-url="/smokers/propane/3"
@@ -172,7 +172,7 @@ const SmokerDirectory = () => {
               url="/smokers/propane/4"
               image={ dyna } />
             <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="dynaglo-propane"
               data-item-price="199.99"
               data-item-url="/smokers/propane/4"
@@ -191,7 +191,7 @@ const SmokerDirectory = () => {
               url="/smokers/propane/5"
               image={ mbexp } />
             <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="masterbuilt-mb20051315"
               data-item-price="399.99"
               data-item-url="/smokers/propane/5"
@@ -217,7 +217,7 @@ const SmokerDirectory = () => {
                 url="/smokers/electric/1"
                 image={ smhollow} />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="smoke-hollow-electric"
               data-item-price="149.99"
               data-item-url="/smokers/electric/1"
@@ -233,7 +233,7 @@ const SmokerDirectory = () => {
                 url="/smokers/electric/2"
                 image={ smokehouse} />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="smokehouse-big-chief"
               data-item-price="124.99"
               data-item-url="/smokers/electric/2"
@@ -252,7 +252,7 @@ const SmokerDirectory = () => {
                 url="/smokers/electric/3"
                 image={ elecdyna } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="dyna-glo-electric"
               data-item-price="302.99"
               data-item-url="/smokers/electric/3"
@@ -268,7 +268,7 @@ const SmokerDirectory = () => {
                 url="/smokers/electric/4"
                 image={ charbroilelec } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="charbroil-17202004"
               data-item-price="259.99"
               data-item-url="/smokers/electric/4"
@@ -287,7 +287,7 @@ const SmokerDirectory = () => {
                 url="/smokers/electric/5"
                 image={ mbelecexp} />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="masterbuilt-mb2007-electric"
               data-item-price="399.99"
               data-item-url="/smokers/electric/5"
@@ -303,7 +303,7 @@ const SmokerDirectory = () => {
                 url="/smokers/electric/6"
                 image={ smokinit } />
               <button
-              class="snipcart-add-item"
+              className="snipcart-add-item"
               data-item-id="smokin-it-2"
               data-item-price="569.99"
               data-item-url="/smokers/electric/6"
