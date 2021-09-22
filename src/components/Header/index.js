@@ -19,6 +19,8 @@ const Header = props => {
                     SmokeShow
                 </div>
 
+                
+                {/** 
                 <div className="callToActions">
 
                     {currentUser && (
@@ -46,6 +48,7 @@ const Header = props => {
                         </ul>
                     )}
                 </div>
+                    */}
             </div>
 
         </header>

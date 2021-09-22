@@ -35,6 +35,7 @@ import wichita from './../../assets/loaded-wichita.jpg';
 import mb560 from './../../assets/MB560.jpg';
 import mb1050 from './../../assets/MB1050.jpg';
 
+import './styles.css'
 
 
 const SmokerDirectory = () => {
