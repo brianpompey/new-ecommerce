@@ -38,6 +38,7 @@ function SmokerDirectory() {
         leftIcon={<FiShoppingBag size="24px" />}
         size="lg"
         p={2}
+        className="snipcart-checkout"
       >
         View Cart
       </Button>
@@ -103,18 +104,24 @@ function SmokerDirectory() {
                 {product.description}
               </Text>
 
-              <Button
-                leftIcon={<FiShoppingCart size="24px" />}
-                size="lg"
-                mt={4}
-                isFullWidth
-                colorScheme="blue"
-                variant="outline"
-                alignSelf={"center"}
-
-              >
-                Add to Cart
-              </Button>
+                <Button
+                    leftIcon={<FiShoppingCart size="24px" />}
+                    size="lg"
+                    mt={4}
+                    isFullWidth
+                    colorScheme="blue"
+                    variant="outline"
+                    alignSelf={"center"}
+                    className="snipcart-add-item"
+                    data-item-id={product.id}
+                    data-item-image={product.image}
+                    data-item-name={product.name}
+                    data-item-url="/"
+                    data-item-description={product.description}
+                    data-item-price={product.price}
+                    >
+                    Add to Cart
+                </Button>
             </Box>
           </Box>
         ))}
