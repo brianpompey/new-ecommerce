@@ -20,7 +20,7 @@ function SmokerDirectory() {
   useEffect(() => {
     async function fetchData() {
       const res = await butter.content.retrieve(["smokers"], {
-        order: "name",
+        order: "id",
       });
       const { data } = await res.data;
       const allProducts = data.smokers;
