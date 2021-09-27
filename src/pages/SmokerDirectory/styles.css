@@ -1,34 +1,4 @@
-.smokers h2 {
-    font-size: 30px;
-    font-weight: 400;
-    color: blue;
-  }
-  
-  .smokers h3 {
-    font-size: 50px;
-    font-weight: 600;
-  }
-  
-  .smokers p {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  
-  .smoker-group {
-    margin: 50px 40px 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    justify-items: center;
-  }
-  
-  .smokers button {
-    cursor: pointer;
-    background-color: crimson;
-    color: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-  }
+.
   
   
   

@@ -31,17 +31,19 @@ function SmokerDirectory() {
   return (
     <Container maxW="container.xl" h="100vh" >
     <Flex justifyContent="space-between" alignContent="center">
-      <Button
-        my="5px"
-        colorScheme="green"
-        variant="ghost"
-        leftIcon={<FiShoppingBag size="24px" />}
-        size="lg"
-        p={2}
-        className="snipcart-checkout"
-      >
-        View Cart
-      </Button>
+        <div className="check-button">
+            <Button
+                my="5px"
+                colorScheme="green"
+                variant="ghost"
+                leftIcon={<FiShoppingBag size="24px" />}
+                size="lg"
+                p={2}
+                className="snipcart-checkout"
+            >
+                View Cart
+            </Button>
+      </div>
     </Flex>
     <Divider />
     <Box mt={4}>
