@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.scss';
 import Button from './../forms/Button';
-import { signInWithGoogle, auth } from '../../firebase/utils';
+//import { signInWithGoogle, auth } from '../../firebase/utils';
 
 import FormInput from '../forms/FormInput';
 
@@ -26,7 +26,7 @@ class SignIn extends Component {
             [name]: value
         });
     }
-
+/*
     handleSubmit = async e => {
         e.preventDefault();
         const { email, password } = this.state;
@@ -40,7 +40,7 @@ class SignIn extends Component {
             //console.log(err)
         }
     }
-
+*/
     render() {
         const { email, password } = this.state;
         return (

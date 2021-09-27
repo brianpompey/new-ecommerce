@@ -33,9 +33,9 @@ class SignUp extends Component {
 
     handleFormSubmit = async event => {
         event.preventDefault();
-        const { displayName, email, password, confirmPassword, errors } = this.state;
+        const { displayName, email, password, confirmPassword} = this.state;
 
-        if (password != confirmPassword) {
+        if (password !== confirmPassword) {
             const err = ['Password Does Not Match']
             this.setState({
                 errors: err

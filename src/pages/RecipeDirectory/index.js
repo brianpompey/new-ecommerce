@@ -1,5 +1,5 @@
 import React from 'react';
-import RecipeIndex from '../../components/RecipeIndex';
+//import RecipeIndex from '../../components/RecipeIndex';
 
 
 const RecipeDirectory = props => {

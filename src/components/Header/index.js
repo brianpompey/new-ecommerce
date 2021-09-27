@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import './styles.scss';
 import { Link } from 'react-router-dom';
 import Logo from './../../assets/newbbqlogo.jpg'
-import { auth } from '../../firebase/utils';
+//import { auth } from '../../firebase/utils';
 
 const Header = props => {
-    const { currentUser } = props;
+ //   const { currentUser } = props;
     return (
         <header className="header">
             <div className="wrap">
