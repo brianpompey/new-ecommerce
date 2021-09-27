@@ -11,6 +11,7 @@ import {
 import { FiShoppingCart, FiShoppingBag } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import Butter from "buttercms";
+import './styles.css'
 
 const butter = Butter(process.env.REACT_APP_BUTTER_ECOMMERCE);
 
