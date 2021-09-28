@@ -88,7 +88,7 @@ function RecipeDirectory() {
         </Toolbar>
       </AppBar>
       <Box className={classes.hero}>
-        <Box>React Blog</Box>
+        <Box>Recipe Blog</Box>
       </Box>
       <Container maxWidth="lg" className={classes.blogsContainer}>
         <Typography variant="h4" className={classes.blogTitle}>
