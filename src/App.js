@@ -81,7 +81,9 @@ class App extends Component {
             />
             <Route path="/recipes" render={() => (
                 <MainLayout >
-                  <RecipeDirectory />
+                  <ThemeProvider theme={theme}>
+                    <RecipeDirectory />
+                  </ThemeProvider>
                 </MainLayout>
               )} 
             />
