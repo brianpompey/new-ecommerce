@@ -18,6 +18,8 @@ import HomepageLayout from './layouts/HomepageLayout';
 
 import { ChakraProvider } from "@chakra-ui/react";
 
+import { ThemeProvider } from '@material-ui/core/styles'
+
 
 class App extends Component {
 
