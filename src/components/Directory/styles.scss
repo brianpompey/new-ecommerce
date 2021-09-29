@@ -41,8 +41,14 @@
                 border: 1px solid black;
             }
         }
+        .item:last-of-type {
+            background-image: url('./../../assets/recipes.jpg');
+        }
         .item:last-of-type:hover {
             background: url("./../../assets/coming-soon.jpg") no-repeat;
+            a {
+                display: none;
+            }
         }
     }
 }
