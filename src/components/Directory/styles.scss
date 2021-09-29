@@ -41,5 +41,9 @@
                 border: 1px solid black;
             }
         }
+
+        .item:hover {
+            display: none;
+        }
     }
 }
