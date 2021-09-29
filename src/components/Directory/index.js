@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Recipe from './../../assets/recipes.jpg';
 import Grill from './../../assets/grills.jpg';
+import Coming from './../../assets/coming-soon.jpg';
 import "./styles.scss";
 
 const Directory = props => {
