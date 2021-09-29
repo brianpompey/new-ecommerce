@@ -41,8 +41,7 @@
                 border: 1px solid black;
             }
         }
-
-        .item:hover {
+        .item a:last-of-type:hover {
             display: none;
         }
     }
