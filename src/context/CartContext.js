@@ -1,10 +1,40 @@
 
-import React, {createContext, useState} from 'react';
+import React, {createContext, useContext, useReducer } from 'react';
 
 import { getProduct, noProducts } from './../services/ProductsServices.js';
 
 export const CartContext = createContext();
 
+
+const Context = ({ children }) => {
+    const products = [...PRODUCTS];
+
+    const [state, dispatch] = useReducer(cartReducer, {
+        products: products,
+        cart: [],
+    });
+
+
+    return (
+        <Cart.Provider value={{ state, dispatch, productState, productDispatch }}>
+          {children}
+        </Cart.Provider>
+      );
+};
+
+
+export const CartState = () => {
+    return useContext(Cart);
+};
+    
+
+export default Context;
+
+
+
+
+
+/*
 export function CartProvider(props) {
   const [items, setItems] = useState([]);
   
