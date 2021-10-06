@@ -1,6 +1,9 @@
 import React from 'react';
 import './styles.css'
 
+import { CartState } from "../../context/CartContext.js"
+import SingleProduct from "./SingleProduct.js";
+
 
 const SmokerPage = () => {
     const {
