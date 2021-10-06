@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import SmokerDirectory from './pages/SmokerDirectory';
 import RecipeDirectory from './pages/RecipeDirectory';
 import Cart from './components/Cart';
+import SmokerPage from './components/SmokerPage';
 
 //layouts
 import MainLayout from './layouts/MainLayout';
@@ -74,9 +75,7 @@ class App extends Component {
             />
             <Route path="/grills" render={() => (
                 <MainLayout>
-                  <ChakraProvider >
-                    <SmokerDirectory />
-                  </ChakraProvider>
+                  <SmokerPage/>
                 </MainLayout>
               )} 
             />
@@ -109,3 +108,10 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+
+/*
+                  <ChakraProvider >
+                    <SmokerDirectory />
+                  </ChakraProvider>
+                  */
