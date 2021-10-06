@@ -2,12 +2,23 @@
 import React, {createContext, useContext, useReducer, useState, useEffect } from 'react';
 import { cartReducer } from "./Reducers";
 import { getProducts, noProducts } from './../services/ProductsServices.js';
+import faker from "faker";
 
 export const CartContext = createContext();
-
+faker.seed(99);
 
 const Context = ({ children }) => {
-    const products = getProducts();
+    const products = [...Array(20)].map(() => ({
+        id: faker.datatype.uuid(),
+        name: faker.commerce.productName(),
+        price: faker.commerce.price(),
+        image: faker.random.image(),
+        inStock: faker.random.arrayElement([0, 3, 5, 6, 7]),
+        fastDelivery: faker.datatype.boolean(),
+        ratings: faker.random.arrayElement([1, 2, 3, 4, 5]),
+    }));
+    
+  //  const products = getProducts();
     /*
     const [allProducts, setProducts] = useState([]);
     setProducts(getProducts());

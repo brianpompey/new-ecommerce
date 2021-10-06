@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './styles.css'
 
 import { CartState } from "../../context/CartContext.js"
 import SingleProduct from "./SingleProduct.js";
 
 
+class SmokerPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {products: CartState.products}
+    }
+
+    render() {
+        return(
+            <div>
+                <h2>Hello WOrld</h2>
+            </div>
+        )
+    }
+}
+
+/*
 const SmokerPage = () => {
     const {
-        state: { products } 
+        state: { products },
     } = CartState();
 
     const prod = products;
@@ -21,5 +37,6 @@ const SmokerPage = () => {
     );
 };
 
+*/
 
 export default SmokerPage;
