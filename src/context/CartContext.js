@@ -24,7 +24,7 @@ const Context = ({ children }) => {
 
 
 export const CartState = () => {
-    return useContext(Cart);
+    return useContext(CartContext);
 };
     
 
