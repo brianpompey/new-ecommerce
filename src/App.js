@@ -11,6 +11,7 @@ import Registration from './pages/Registration';
 import Login from './pages/Login';
 import SmokerDirectory from './pages/SmokerDirectory';
 import RecipeDirectory from './pages/RecipeDirectory';
+import Cart from './components/Cart';
 
 //layouts
 import MainLayout from './layouts/MainLayout';
@@ -76,6 +77,12 @@ class App extends Component {
                   <ChakraProvider >
                     <SmokerDirectory />
                   </ChakraProvider>
+                </MainLayout>
+              )} 
+            />
+            <Route path="/cart" render={() => (
+                <MainLayout>
+                  <Cart />
                 </MainLayout>
               )} 
             />
