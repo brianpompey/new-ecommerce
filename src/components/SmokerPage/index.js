@@ -6,9 +6,16 @@ const SmokerPage = () => {
     const {
         state: { products } 
     } = CartState();
-    return(
-        <h2>Helllo World</h2>
-    )
+
+    const prod = products;
+
+    return (
+        <div className="home">
+          <div className="productContainer">
+              <SingleProduct prod={prod} key={prod.id} />
+          </div>
+        </div>
+    );
 };
 
 
