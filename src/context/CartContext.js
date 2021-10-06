@@ -1,13 +1,18 @@
 
-import React, {createContext, useContext, useReducer } from 'react';
+import React, {createContext, useContext, useReducer, useState, useEffect } from 'react';
 
 import { getProducts, noProducts } from './../services/ProductsServices.js';
 
 export const CartContext = createContext();
 
+const [products, setProducts] = useState([]);
+
+useEffect(() => {
+    setProducts(getProducts());
+});
+
 
 const Context = ({ children }) => {
-    const products = [getProducts.PRODUCTS];
 
     const [state, dispatch] = useReducer(cartReducer, {
         products: products,
