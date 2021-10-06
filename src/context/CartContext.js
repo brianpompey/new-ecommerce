@@ -72,14 +72,13 @@ export function CartProvider(props) {
   }
   
   /** */
-  function clearCart() {
+function clearCart() {
     return setItems(noProducts);
-  }
+}
   
-  return (
+return (
     <CartContext.Provider 
       value={{items, setItems, getItemsCount, addItemToCart, getTotalPrice, clearCart}}>
       {props.children}
     </CartContext.Provider>
-  );
-}
+);
