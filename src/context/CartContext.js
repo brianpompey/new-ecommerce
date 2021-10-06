@@ -7,8 +7,11 @@ export const CartContext = createContext();
 
 
 const Context = ({ children }) => {
+    const products = getProducts();
+    /*
     const [allProducts, setProducts] = useState([]);
     setProducts(getProducts());
+
     /*
     useEffect(() => {
         const allProducts = getProducts();
@@ -18,7 +21,7 @@ const Context = ({ children }) => {
 
 
     const [state, dispatch] = useReducer(cartReducer, {
-        products: allProducts,
+        products: products,
         cart: [],
     });
 
