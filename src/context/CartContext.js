@@ -5,25 +5,28 @@ import { getProducts, noProducts } from './../services/ProductsServices.js';
 
 export const CartContext = createContext();
 
-const [products, setProducts] = useState([]);
-
-useEffect(() => {
-    setProducts(getProducts());
-});
-
 
 const Context = ({ children }) => {
+    const [allProducts, setProducts] = useState([]);
+    setProducts(getProducts());
+    /*
+    useEffect(() => {
+        const allProducts = getProducts();
+        return allProducts
+    });
+    */
+
 
     const [state, dispatch] = useReducer(cartReducer, {
-        products: products,
+        products: allProducts,
         cart: [],
     });
 
 
     return (
-        <Cart.Provider value={{ state, dispatch, productState, productDispatch }}>
+        <CartContext.Provider value={{ state, dispatch }}>
           {children}
-        </Cart.Provider>
+        </CartContext.Provider>
       );
 };
 
@@ -76,7 +79,7 @@ export function CartProvider(props) {
       return items.reduce((sum, item) => (sum + item.totalPrice), 0);
   }
   
-  /** */
+  
 function clearCart() {
     return setItems(noProducts);
 }
@@ -87,3 +90,4 @@ return (
       {props.children}
     </CartContext.Provider>
 );
+/** */
