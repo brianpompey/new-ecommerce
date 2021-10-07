@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
 import './styles.css'
-
+import { getProducts } from '../../services/ProductsServices';
 import { CartState } from "../../context/CartContext.js"
 import SingleProduct from "./SingleProduct.js";
 
+const products = getProducts();
 
 class SmokerPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {products: CartState.products}
+        this.state = {products: products}
     }
 
     render() {
+      //  const prod = products;
         return(
-            <div>
-                <h2>Hello WOrld</h2>
+            <div className="home">
+                <div className="productContainer">
+                    {this.state.products.map((prod) => (
+                        <SingleProduct name={prod.name} price={prod.id} />
+                    ))}
+                </div>
             </div>
         )
     }

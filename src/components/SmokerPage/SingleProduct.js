@@ -1,16 +1,30 @@
 import React from 'react';
 import { CartState } from "../../context/CartContext.js";
 import { Card, Button } from "react-bootstrap";
+import { getProducts } from '../../services/ProductsServices.js';
 //import Card from './../Card.js'
 
-
-
-const SingleProduct = ({ prod }) => {
+const products = getProducts();
+const SingleProduct = (props) => {
+    return(
+        <div className="products">
+            <Card>
+                <Card.Title>{props.name}</Card.Title>
+                <Card.Title>{props.price}</Card.Title>
+                <Card.Title>{props.description}</Card.Title>
+            </Card>
+        </div>
+    )
+}
+ /**
     const {
       state: { cart },
       dispatch,
     } = CartState();
+
+    
   
+    
     return (
       <div className="products">
         <Card>
@@ -54,6 +68,7 @@ const SingleProduct = ({ prod }) => {
         </Card>
       </div>
     );
-  };
+    */
+
   
   export default SingleProduct;
